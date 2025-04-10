@@ -13,9 +13,9 @@ function Joke(props) {
   return (
     <div className="joke-container">
       {props.setup && <p className="setup">Setup: {props.setup}</p>}
-      <p className="punchline">{props.punchline}</p>
+      {isShown === true && <p className="punchline">{props.punchline}</p>}
       <button onClick={toggleShown} className="Add-btn">
-        Add Punchline
+        See Punchline
       </button>
       <div className="separator"></div>
     </div>

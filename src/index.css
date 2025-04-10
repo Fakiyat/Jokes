@@ -39,17 +39,26 @@
 .Add-btn {
   background-color: rgb(221, 114, 52);
   color: white;
-  border-radius: 10px;
-  padding: 10px 20px;
+  border-radius: 30px;
+  padding: 10px 25px;
   border: none;
   cursor: pointer;
   font-size: 16px;
-  transition: background-color 0.3s ease;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
   margin-bottom: 1rem;
 }
 
 .Add-btn:hover {
   background-color: rgb(200, 90, 30);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.Add-btn:active {
+  transform: scale(0.97);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .separator {
