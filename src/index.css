@@ -1,0 +1,12 @@
+* {
+  background-color: antiquewhite;
+}
+.setup {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+}
+.punchline {
+  text-align: center;
+  font-size: 20px;
+}
