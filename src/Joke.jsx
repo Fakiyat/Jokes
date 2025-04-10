@@ -13,9 +13,10 @@ function Joke(props) {
   return (
     <div className="joke-container">
       {props.setup && <p className="setup">Setup: {props.setup}</p>}
-      {isShown === true && <p className="punchline">{props.punchline}</p>}
+      {isShown ? <p className="punchline">{props.punchline} </p> : null}
+      {/* &&  the alternative way for this is a Ternary function isShown ? <p></p> : null */}
       <button onClick={toggleShown} className="Add-btn">
-        See Punchline
+        {!isShown ? "Show" : "Hide"} Punchline
       </button>
       <div className="separator"></div>
     </div>
