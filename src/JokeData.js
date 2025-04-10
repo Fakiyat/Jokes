@@ -26,12 +26,12 @@ export default [
   },
   {
     id: 6,
-    setup: "I got my daughter a fridge for her birthday.",
-    punchline: "I can't wait to see her face light up when she opens it.",
+    setup: "What does a cloud wear under his raincoat?",
+    punchline: "Thunderwear..",
   },
   {
     id: 7,
-    setup: "How did the hacker escape the police?",
-    punchline: "He just ransomware!",
+    setup: "What time is it when the clock strikes 13?",
+    punchline: "Time to get a new clock.",
   },
 ];

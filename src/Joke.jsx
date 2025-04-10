@@ -1,10 +1,24 @@
+import React from "react";
+import { useState } from "react";
+
 function Joke(props) {
+  const [isShown, setIsShown] = useState(false);
+
+  function toggleShown() {
+    setIsShown((prevShown) => !prevShown);
+  }
+
+  console.log(isShown);
+
   return (
-    <>
+    <div className="joke-container">
       {props.setup && <p className="setup">Setup: {props.setup}</p>}
       <p className="punchline">{props.punchline}</p>
-      <hr />
-    </>
+      <button onClick={toggleShown} className="Add-btn">
+        Add Punchline
+      </button>
+      <div className="separator"></div>
+    </div>
   );
 }
 export default Joke;
